@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /css
+Disallow: /js
+Disallow: /fonts
+Disallow: /img
+
+User-agent: Yandex
+Disallow: /css
+Disallow: /js
+Disallow: /fonts
+Disallow: /img
+Host: blogibiznes.ru
+
+
