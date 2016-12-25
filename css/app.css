@@ -209,7 +209,8 @@ section {
 
 .holder:hover h1 {
   color: #da259c;
-  background: url("../img/pattern.gif"); }
+  background: url("../img/wn.gif");
+  background-size: cover; }
 
 h1 {
   padding-top: 0.5vh;
@@ -307,7 +308,7 @@ h2 {
 #lyrics:hover {
   color: #da259c;
   text-decoration: none;
-  background: url("../img/pattern.gif");
+  background: url("../img/wn.gif");
   text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.6);
   outline: 3px solid #da259c; }
 
@@ -369,7 +370,7 @@ h2 {
   text-decoration: none;
   outline: 3px solid #da259c;
   border-radius: 0;
-  background: url("../img/pattern.gif");
+  background: url("../img/wn.gif");
   color: #da259c; }
 
 /***********************CLOCK DIV****************************/
@@ -413,7 +414,7 @@ span.days, span.hours, span.minutes, span.seconds {
   padding: 15px;
   font-size: 1.2em;
   font-family: "Qlassik";
-  background: url("../img/pattern.gif");
+  background: url("../img/wn.gif");
   display: inline-block; }
 
 .smalltext {
