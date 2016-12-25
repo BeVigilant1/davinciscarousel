@@ -2,6 +2,7 @@
 @import "http://webfonts.ru/import/introcondensed.css";
 @import "http://webfonts.ru/import/glober.css";
 @import "http://webfonts.ru/import/osanscondensed.css";
+@import "http://webfonts.ru/import/qlassik.css";
 @media only screen and (max-width: 680px) {
   #clockdiv {
     margin-top: 20px; }
@@ -21,7 +22,7 @@
   /* STYLES GO HERE */ }
 /***********************SOUND PLAYER****************************/
 .play-button {
-  background: #ffff00;
+  background: #da259c;
   font-size: 1.8em;
   color: whitesmoke;
   padding-top: 5px;
@@ -51,7 +52,7 @@
   margin-top: 20px;
   background: fuchsia;
   font-size: 1.8em;
-  color: #ffff00;
+  color: #da259c;
   padding-top: 5px;
   border-radius: 0;
   margin: auto 5vw;
@@ -63,7 +64,7 @@
   margin-top: 20px;
   background: whitesmoke;
   font-size: 1.8em;
-  color: #ffff00;
+  color: #da259c;
   padding-top: 5px;
   border-radius: 0;
   margin: auto 5vw;
@@ -71,7 +72,7 @@
   width: 50px; }
 
 .tooltip {
-  font-family: "Open Sans Condensed";
+  font-family: "Qlassik";
   font-size: 2em; }
 
 /***********************MAIN CSS****************************/
@@ -92,7 +93,7 @@ body {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89b40', endColorstr='#d700cd',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
-  border: 10px solid #ffff00;
+  border: 10px solid #da259c;
   margin-bottom: 2vh;
   display: flex;
   flex-direction: row;
@@ -189,62 +190,61 @@ section {
   outline-offset: 10px;*/
   margin: 6vh auto;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f89b40+0,d700cd+100 */
-  background: #f89b40;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #f89b40 0%, #d700cd 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #f89b40 0%, #d700cd 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #f89b40 0%, #d700cd 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89b40', endColorstr='#d700cd',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
+  background: #9900ff;
+  background: -moz-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #9900ff), color-stop(100%, #051aff));
+  background: -webkit-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: -o-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: -ms-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: linear-gradient(to right, #9900ff 0%, #051aff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9900ff', endColorstr='#051aff', GradientType=1 );
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s; }
 
 .holder:hover {
-  color: #ffff00;
+  color: #da259c;
   background: transparent;
-  outline: 3px solid #ffff00; }
+  outline: 3px solid #da259c; }
 
 .holder:hover h1 {
-  color: #ffff00;
+  color: #da259c;
   background: url("../img/pattern.gif"); }
 
 h1 {
   padding-top: 0.5vh;
   background: transparent;
-  font-family: "Open Sans Condensed";
+  font-family: "Qlassik";
   font-size: 4em;
   color: whitesmoke; }
 
 h2 {
-  font-family: "Open Sans Condensed";
+  font-family: "Qlassik";
   font-size: 2.2em;
   color: whitesmoke; }
 
-.buy a {
-  text-decoration: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-  z-index: 2;
-  color: #ffff00; }
-
-.buy a:hover {
-  color: blue; }
+.buy {
+  background: rgba(218, 37, 156, 0.1); }
+  .buy a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 2;
+    color: #da259c; }
+    .buy a:hover {
+      color: blue; }
 
 #info {
   padding: 20px;
-  font-family: "Open Sans Condensed";
+  font-family: "Qlassik";
   text-align: left;
   color: whitesmoke;
   font-size: 30px;
   line-height: 1.5em; }
 
 .numbers {
-  font-family: "Open Sans Condensed";
+  font-family: "Qlassik";
   margin-top: 20px;
   color: whitesmoke;
   display: inline-block;
@@ -258,19 +258,16 @@ h2 {
   display: inline-block; }
 
 .pink-text, a.pink-text {
-  text-shadow: 1px 2px 1px rgba(255, 255, 255, 0.5);
-  color: #FFFF00;
+  color: #da259c;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f89b40+0,d700cd+100 */
-  background: #f89b40;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #f89b40 0%, #d700cd 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #f89b40 0%, #d700cd 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #f89b40 0%, #d700cd 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89b40', endColorstr='#d700cd',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
+  background: #9900ff;
+  background: -moz-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #9900ff), color-stop(100%, #051aff));
+  background: -webkit-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: -o-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: -ms-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: linear-gradient(to right, #9900ff 0%, #051aff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9900ff', endColorstr='#051aff', GradientType=1 ); }
 
 #blue-text {
   color: #FF00FF;
@@ -281,13 +278,13 @@ h2 {
   z-index: 4; }
 
 #blue-text:hover {
-  color: #ffff00; }
+  color: #da259c; }
 
 .numbers span.pink-text {
   margin: 0 5px; }
 
 #lyrics {
-  font-family: "Open Sans Condensed";
+  font-family: "Qlassik";
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
@@ -296,34 +293,31 @@ h2 {
   text-align: center;
   padding: 10px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f89b40+0,d700cd+100 */
-  background: #f89b40;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #f89b40 0%, #d700cd 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #f89b40 0%, #d700cd 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #f89b40 0%, #d700cd 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89b40', endColorstr='#d700cd',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
+  background: #9900ff;
+  background: -moz-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #9900ff), color-stop(100%, #051aff));
+  background: -webkit-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: -o-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: -ms-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: linear-gradient(to right, #9900ff 0%, #051aff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9900ff', endColorstr='#051aff', GradientType=1 );
   font-size: 2em;
   margin-top: 40px; }
 
 #lyrics:hover {
-  color: #ffff00;
+  color: #da259c;
   text-decoration: none;
   background: url("../img/pattern.gif");
   text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.6);
-  outline: 3px solid #ffff00; }
+  outline: 3px solid #da259c; }
 
 .modal {
-  background: url("../img/blast.gif");
+  background: url("../img/lyrics_back.gif");
   background-size: cover;
-  opacity: 0.5;
-  background-position: -2vh; }
+  opacity: 0.5; }
 
 .modal-content {
-  background: rgba(1, 1, 1, 0.2);
+  background: rgba(245, 245, 245, 0.2);
   padding: 10px;
   margin-top: 15%;
   box-shadow: none;
@@ -351,14 +345,14 @@ h2 {
 
 .close:hover,
 .close:focus {
-  color: #ffff00;
+  color: #da259c;
   text-decoration: none;
   cursor: pointer;
   text-shadow: none;
   opacity: 1; }
 
 #close_modal {
-  font-family: "Open Sans Condensed";
+  font-family: "Qlassik";
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -373,15 +367,15 @@ h2 {
 
 #close_modal:hover {
   text-decoration: none;
-  outline: 3px solid #ffff00;
+  outline: 3px solid #da259c;
   border-radius: 0;
   background: url("../img/pattern.gif");
-  color: #ffff00; }
+  color: #da259c; }
 
 /***********************CLOCK DIV****************************/
 #clockdiv:before {
   content: 'ДО НАЧАЛА ТУСОВКИ ОСТАЛОСЬ:';
-  font-family: "Open Sans Condensed";
+  font-family: "Qlassik";
   display: block;
   margin-bottom: 10px;
   text-align: center;
@@ -391,8 +385,8 @@ h2 {
 #clockdiv {
   margin-top: 45px;
   margin: 45px auto 10px;
-  font-family: "Open Sans Condensed";
-  color: #ffff00;
+  font-family: "Qlassik";
+  color: whitesmoke;
   display: inline-block;
   font-weight: 100;
   text-align: center;
@@ -405,22 +399,20 @@ span.days, span.hours, span.minutes, span.seconds {
 #clockdiv > div {
   padding: 7px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f89b40+0,d700cd+100 */
-  background: #f89b40;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #f89b40 0%, #d700cd 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #f89b40 0%, #d700cd 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #f89b40 0%, #d700cd 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89b40', endColorstr='#d700cd',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
+  background: #9900ff;
+  background: -moz-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #9900ff), color-stop(100%, #051aff));
+  background: -webkit-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: -o-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: -ms-linear-gradient(left, #9900ff 0%, #051aff 100%);
+  background: linear-gradient(to right, #9900ff 0%, #051aff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9900ff', endColorstr='#051aff', GradientType=1 );
   display: inline-block; }
 
 #clockdiv div > span {
   padding: 15px;
   font-size: 1.2em;
-  font-family: "Open Sans Condensed";
+  font-family: "Qlassik";
   background: url("../img/pattern.gif");
   display: inline-block; }
 
@@ -433,7 +425,7 @@ span.days, span.hours, span.minutes, span.seconds {
 @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
   #clockdiv {
     margin: 45px auto 0;
-    font-family: "Open Sans Condensed";
+    font-family: "Qlassik";
     color: #fff;
     display: inline-block;
     font-weight: 100;

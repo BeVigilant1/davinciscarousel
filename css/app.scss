@@ -2,6 +2,7 @@
 @import "http://webfonts.ru/import/introcondensed.css";
 @import "http://webfonts.ru/import/glober.css";
 @import "http://webfonts.ru/import/osanscondensed.css";
+@import "http://webfonts.ru/import/qlassik.css";
 
 @import "variables.scss";
 
@@ -48,7 +49,7 @@ and (max-device-width : 1024px)  { /* STYLES GO HERE */}
 
 
 .play-button {
-  background: #ffff00;
+  background: $secondary-color;
 font-size: 1.8em;
 color:$primary-color;
 padding-top: 5px;
@@ -86,7 +87,7 @@ width: 50px;
 margin-top: 20px;
   background:fuchsia;
 font-size: 1.8em;
-color:#ffff00;
+color:$secondary-color;
 padding-top: 5px;
 border-radius: 0;
 margin:auto 5vw;
@@ -99,7 +100,7 @@ width: 50px;
   margin-top: 20px;
   background: $primary-color;
 font-size: 1.8em;
-color:#ffff00;
+color:$secondary-color;
 padding-top: 5px;
 border-radius: 0;
 margin:auto 5vw;
@@ -131,7 +132,7 @@ background: -moz-linear-gradient(-45deg, rgba(248,155,64,0.4) 0%, rgba(215,0,205
 background: -webkit-linear-gradient(-45deg, rgba(248,155,64,0.4) 0%,rgba(215,0,205,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg, rgba(248,155,64,0.4) 0%,rgba(215,0,205,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89b40', endColorstr='#d700cd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ ;
-  border: 10px solid #ffff00;
+  border: 10px solid $secondary-color;
  
   margin-bottom: 2vh;
   display: flex;
@@ -245,26 +246,21 @@ section{
   
 /*outline: 12px solid #FF00E6;
 outline-offset: 10px;*/
-  margin: 6vh auto ;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f89b40+0,d700cd+100 */
-background: rgb(248,155,64); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(248,155,64,1) 0%, rgba(215,0,205,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(248,155,64,1) 0%,rgba(215,0,205,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(248,155,64,1) 0%,rgba(215,0,205,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89b40', endColorstr='#d700cd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ ;
-  
+margin: 6vh auto ;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f89b40+0,d700cd+100 */
+@include gradient-background;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
  
 }
 .holder:hover  {
-color: #ffff00;
+color: $secondary-color;
 background: transparent;
-outline: 3px solid #ffff00;
+outline: 3px solid $secondary-color;
 }
 .holder:hover h1 {
-  color: #ffff00;
+  color: $secondary-color;
   
    background: $background-animated;
 
@@ -284,18 +280,22 @@ font-size: 2.2em;
 color: $primary-color;
 
 }
-
-.buy a {
+.buy {
+    background: rgba($secondary-color, .1 );
+a {
    text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 2;
-  color:#ffff00;
+  color:$secondary-color;
+  &:hover{
+      color: blue;
+
+  }
 }
-.buy a:hover{
-  color: blue;
 }
+
 
 #info {
   padding: 20px;
@@ -308,7 +308,7 @@ color: $primary-color;
 .numbers {
     font-family:$primary-font;
   margin-top: 20px;
-  color:$primary-color;
+  color: $primary-color;
   display: inline-block;
   text-align: center;
   padding-top: 5px;
@@ -322,14 +322,9 @@ color: $primary-color;
   display: inline-block;
 }
 .pink-text, a.pink-text{
-  text-shadow: 1px 2px 1px rgba(255, 255, 255, 0.5);
-  color:#FFFF00;
+  color:$secondary-color;
    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f89b40+0,d700cd+100 */
-background: rgb(248,155,64); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(248,155,64,1) 0%, rgba(215,0,205,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(248,155,64,1) 0%,rgba(215,0,205,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(248,155,64,1) 0%,rgba(215,0,205,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89b40', endColorstr='#d700cd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ ;
+@include gradient-background
 }
 
 #blue-text {
@@ -343,7 +338,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89b40', end
   
 }
 #blue-text:hover{
-  color: #ffff00;
+  color: $secondary-color;
 }
 
 .numbers span.pink-text {
@@ -361,32 +356,26 @@ color:$primary-color;
   text-align: center;
   padding: 10px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f89b40+0,d700cd+100 */
-background: rgb(248,155,64); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(248,155,64,1) 0%, rgba(215,0,205,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(248,155,64,1) 0%,rgba(215,0,205,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(248,155,64,1) 0%,rgba(215,0,205,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89b40', endColorstr='#d700cd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ ;
-  font-size: 2em;
+@include gradient-background;font-size: 2em;
   margin-top: 40px;
 
 }
 #lyrics:hover{
- color:#ffff00;
+ color:$secondary-color;
    text-decoration: none;
    background: $background-animated;
 
   text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.6);
 
-outline: 3px solid #ffff00;
+outline: 3px solid $secondary-color;
 }
 .modal{
-  background: url('../img/blast.gif');
+  background: url('../img/lyrics_back.gif');
   background-size: cover;
   opacity: 0.5;
-background-position: -2vh;
 }
 .modal-content {
-  background: rgba(1, 1, 1, 0.2);
+  background: rgba($primary-color, .2 );
  padding:10px;
  margin-top: 15%;
  box-shadow: none;
@@ -416,7 +405,7 @@ background-position: -2vh;
 }
 .close:hover,
 .close:focus {
-  color: #ffff00;
+  color: $secondary-color;
 
   text-decoration: none;
   cursor: pointer;
@@ -439,10 +428,10 @@ outline: 3px solid $primary-color;
 }
 #close_modal:hover {
     text-decoration: none;
-   outline: 3px solid #ffff00;
+   outline: 3px solid $secondary-color;
     border-radius: 0;
     background: $background-animated;
-    color: #ffff00;
+    color: $secondary-color;
 }
 
 /***********************CLOCK DIV****************************/
@@ -461,7 +450,7 @@ outline: 3px solid $primary-color;
 margin-top: 45px;
    margin: 45px auto 10px;
   font-family: $primary-font;
-  color: #ffff00;
+  color: $primary-color;
   display: inline-block;
   font-weight: 100;
   text-align: center;
@@ -476,12 +465,8 @@ span.days, span.hours, span.minutes, span.seconds{
 #clockdiv > div{
   padding: 7px;
  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f89b40+0,d700cd+100 */
-background: rgb(248,155,64); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(248,155,64,1) 0%, rgba(215,0,205,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(248,155,64,1) 0%,rgba(215,0,205,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(248,155,64,1) 0%,rgba(215,0,205,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89b40', endColorstr='#d700cd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ ;
-  display: inline-block;
+@include gradient-background;
+display: inline-block;
 }
 
 #clockdiv div > span{
