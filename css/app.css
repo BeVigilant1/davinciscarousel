@@ -209,7 +209,7 @@ section {
 
 .holder:hover h1 {
   color: #da259c;
-  background: url("../img/wn.gif");
+  background: url("../img/e.gif");
   background-size: cover; }
 
 h1 {
@@ -224,17 +224,15 @@ h2 {
   font-size: 2.2em;
   color: whitesmoke; }
 
-.buy {
-  background: rgba(218, 37, 156, 0.1); }
-  .buy a {
-    text-decoration: none;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-    z-index: 2;
-    color: #da259c; }
-    .buy a:hover {
-      color: blue; }
+.buy a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 2;
+  color: #da259c; }
+  .buy a:hover {
+    color: blue; }
 
 #info {
   padding: 20px;
@@ -308,7 +306,7 @@ h2 {
 #lyrics:hover {
   color: #da259c;
   text-decoration: none;
-  background: url("../img/wn.gif");
+  background: url("../img/e.gif");
   text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.6);
   outline: 3px solid #da259c; }
 
@@ -370,7 +368,7 @@ h2 {
   text-decoration: none;
   outline: 3px solid #da259c;
   border-radius: 0;
-  background: url("../img/wn.gif");
+  background: url("../img/e.gif");
   color: #da259c; }
 
 /***********************CLOCK DIV****************************/
@@ -414,7 +412,7 @@ span.days, span.hours, span.minutes, span.seconds {
   padding: 15px;
   font-size: 1.2em;
   font-family: "Qlassik";
-  background: url("../img/wn.gif");
+  background: url("../img/e.gif");
   display: inline-block; }
 
 .smalltext {
